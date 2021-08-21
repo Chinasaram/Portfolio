@@ -17,5 +17,5 @@ def home(request):
         contact.subject = subject
         contact.message = message
         contact.save()
-        return HttpResponse('<h2>Thank you for contacting me, I will get back to you shortly.</h2>')
+        # return HttpResponse('<h2>Thank you for contacting me, I will get back to you shortly.</h2>')
     return render(request, 'resume/home.html')
